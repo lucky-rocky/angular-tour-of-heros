@@ -1,0 +1,17 @@
+<div>
+    <h2>My Heroes</h2>
+    <ul class="heroes">
+        <ul class="heroes">
+            <li *ngFor="let hero of heroes">
+              <a routerLink="/heroDetail/{{hero.id}}">
+                <span class="badge">{{hero.id}}</span> {{hero.name}}
+              </a>
+            </li>
+          </ul>
+    </ul>
+
+    <!-- select -->
+
+    <!-- <app-hero-detail [selectedHero]="selectedHero"></app-hero-detail> -->
+
+</div>
